@@ -24,9 +24,10 @@ def find_the_cheese(ingredients)
   cheese_types.each { |cheese|
   if ingredients.include?(cheese)
     cheeses << "#{cheese}"
-  else
-    puts nil
   end
   }
-  cheeses.join(' ')
+  if cheeses.length > 0
+    cheeses.join(' ')
+  else
+    puts nil
 end 
