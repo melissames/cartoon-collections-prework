@@ -30,4 +30,5 @@ def find_the_cheese(ingredients)
     cheeses.join(' ')
   else
     puts nil
+  end
 end 
