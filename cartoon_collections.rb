@@ -18,12 +18,15 @@ end
 
 def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
-
-  cheese_types.collect { |cheese|
+  cheeses = []
+  
+  
+  cheese_types.each { |cheese|
   if ingredients.include?(cheese)
-    puts "#{cheese}"
+    cheeses << "#{cheese}"
   else
-    puts nil
-  end
+    puts nil 
+  end 
   }
-end
+  cheeses.join(' ')
+end 
